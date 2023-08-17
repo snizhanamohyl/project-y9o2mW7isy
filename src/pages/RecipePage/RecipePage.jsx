@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import RecipePageHero from 'components/RecipePageComponents/Hero/Hero';
 import RecipePageInstruction from 'components/RecipePageComponents/Instruction/Instruction';
-import SharedContainer from 'components/SharedContainer/SharedContainer';
+import SharedContainer from 'components/common/SharedContainer/SharedContainer';
 import RecipePageIngredients from 'components/RecipePageComponents/Ingredients/Ingredients';
 import getRecipeById from 'services/getRecipeById';
 import { getAllShoppingList } from 'redux/ShopingList/operations';

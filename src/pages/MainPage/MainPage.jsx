@@ -1,6 +1,6 @@
-import PreviewCategories from "../../components/PreviewCategories/PreviewCategories";
-import Hero from "components/Hero/Hero";
-import SharedContainer from "components/SharedContainer/SharedContainer";
+import PreviewCategories from "../../components/MainPage/PreviewCategories/PreviewCategories";
+import Hero from "components/MainPage/Hero/Hero";
+import SharedContainer from "components/common/SharedContainer/SharedContainer";
 
 export default function MainPage() {
     return (<SharedContainer>

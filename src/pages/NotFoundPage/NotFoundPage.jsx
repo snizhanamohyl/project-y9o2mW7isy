@@ -1,4 +1,4 @@
-import SharedContainer from "components/SharedContainer/SharedContainer";
+import SharedContainer from "components/common/SharedContainer/SharedContainer";
 import NotFound from 'components/NotFound/NotFound';
 
 export default function NotFoundPage() {

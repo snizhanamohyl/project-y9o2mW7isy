@@ -11,7 +11,7 @@ import {
 } from 'redux/auth/selectors';
 import useWindowWidth from 'hooks/useWindowWidth';
 import Sprite from 'assets/sprite.svg';
-import Notification from 'components/Notification/Notification';
+import Notification from 'components/common/Notification/Notification';
 
 import {
   Input,

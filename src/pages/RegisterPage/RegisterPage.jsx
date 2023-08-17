@@ -1,4 +1,4 @@
-import { RegisterForm } from '../../components/RegisterForm/RegisterForm';
+import { RegisterForm } from 'components/RegisterForm/RegisterForm';
 
 import registerMob from 'assets/images/mobile/register-1x.png';
 import registerMobRet from 'assets/images/mobile/register-2x.png';

@@ -6,14 +6,14 @@ import {
   ShoppingListTitle,
   Container
 } from './ShoppingListPage.styled';
-import ProductListItem from 'components/ShoppingListItem/ShoppingListItem';
+import ProductListItem from 'components/ShoppingListPage/ShoppingListItem/ShoppingListItem';
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import SharedContainer from 'components/SharedContainer/SharedContainer';
+import SharedContainer from 'components/common/SharedContainer/SharedContainer';
 import { deleteIngredient, getAllShoppingList } from 'redux/ShopingList/operations';
 import { getShoppingList } from 'redux/ShopingList/selectors';
-import SearchFailed from 'components/EmptyPage/EmptyPage';
-import PageLoader from 'components/PageLoader/PageLoader';
+import SearchFailed from 'components/common/EmptyPage/EmptyPage';
+import PageLoader from 'components/common/PageLoader/PageLoader';
 
 export default function ShoppingListPage() {
 
@@ -33,9 +33,9 @@ export default function ShoppingListPage() {
     if (products.length === ingredients.length) {
       return
     }
-    setIsLoading(true)
+    setIsLoading(true);
     dispatch(getAllShoppingList());
-    setProducts(ingredients)
+    setProducts(ingredients);
     setIsLoading(false)
   }, [dispatch, ingredients, products]);
 

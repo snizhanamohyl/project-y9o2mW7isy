@@ -3,9 +3,9 @@ import { lazy, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { logout, refreshUser } from 'redux/auth/auth-operations';
 
-import PrivateRoute from 'components/PrivateRoute/PrivateRoute';
-import RestrictedRoute from 'components/RestrictedRoute/RestrictedRoute';
-import SharedLayout from 'components/SharedLayout/SharedLayout';
+import PrivateRoute from 'components/common/PrivateRoute/PrivateRoute';
+import RestrictedRoute from 'components/common/RestrictedRoute/RestrictedRoute';
+import SharedLayout from 'components/common/SharedLayout/SharedLayout';
 
 import RegisterPage from 'pages/RegisterPage/RegisterPage';
 import SigninPage from 'pages/SigninPage/SigninPage';

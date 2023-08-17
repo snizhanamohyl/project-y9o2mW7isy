@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import SharedContainer from 'components/SharedContainer/SharedContainer';
-import SearchBar from 'components/SearchBar/SearchBar';
-import SearchedRecipesList from 'components/SearchedRecipesList/SearchedRecipesList';
+import SharedContainer from 'components/common/SharedContainer/SharedContainer';
+import SearchBar from 'components/SearchPage/SearchBar/SearchBar';
+import SearchedRecipesList from 'components/SearchPage/SearchedRecipesList/SearchedRecipesList';
 import { Section, MainPageTitle } from './SearchPage.styled';
 
 export default function SearchPage() {

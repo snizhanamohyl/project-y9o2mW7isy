@@ -5,7 +5,7 @@ import {
   SectionHero,
 } from './Hero.styled';
 import sprite from '../../../assets/sprite.svg';
-import SharedContainer from 'components/SharedContainer/SharedContainer';
+import SharedContainer from 'components/common/SharedContainer/SharedContainer';
 import BtnAddToFavorite from '../BtnAddToFavorite/BtnAddToFavorite';
 import { useParams } from 'react-router-dom';
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import Favorites from '../../components/Favorites/Favorites';
-import SharedContainer from '../../components/SharedContainer/SharedContainer';
+import Favorites from 'components/CollectionPages/Favorites/Favorites';
+import SharedContainer from 'components/common/SharedContainer/SharedContainer';
 
 
 const FavoritePage = () => {

@@ -31,7 +31,7 @@ import {
 } from 'pages/SigninPage/SigninPage.styled';
 import useWindowWidth from 'hooks/useWindowWidth';
 
-import Notification from 'components/Notification/Notification';
+import Notification from 'components/common/Notification/Notification';
 import { resetError } from 'redux/auth/auth-slice';
 import { useEffect, useState } from 'react';
 

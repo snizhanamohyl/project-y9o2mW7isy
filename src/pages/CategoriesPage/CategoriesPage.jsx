@@ -1,6 +1,6 @@
-import SharedContainer from 'components/SharedContainer/SharedContainer';
+import SharedContainer from 'components/common/SharedContainer/SharedContainer';
 import { Title } from './CategoriesPage.style';
-import Categories from 'components/Categories/Categories';
+import Categories from 'components/CategoriesPage/Categories/Categories';
 
 export default function CategoriesPage() {
   return (
