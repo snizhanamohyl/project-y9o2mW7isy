@@ -55,6 +55,7 @@ export const Layout = styled.div`
   position: relative;
   padding-top: ${({ $isRecipePage }) => ($isRecipePage ? 0 : '64px')};
   width: 100vw;
+  flex-grow: 1;
 
   background: ${({ $isMainPage }) => `${$isMainPage ? heroBgMob : ''} 
   url(${bgSpinachSharedImg}) left bottom no-repeat, var(--bg-color)`};
@@ -89,4 +90,10 @@ export const Layout = styled.div`
         } url(${bgSpinachSharedImgDeskRet}) left bottom / 400px 301px no-repeat, var(--bg-color)`};
     }
   }
+`;
+
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 `;
