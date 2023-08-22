@@ -126,8 +126,8 @@ export const UserImgWrapper = styled.div`
   }
 `;
 export const Avatar = styled.img`
-object-fit: cover;
-`
+  object-fit: cover;
+`;
 
 export const InputButtonWrapper = styled.div`
   display: flex;
@@ -143,7 +143,6 @@ export const InputButtonWrapper = styled.div`
 export const NameLabel = styled.label`
   width: 100%;
   position: relative;
-  cursor: pointer;
 `;
 
 export const NameInput = styled(Field)`
@@ -164,11 +163,7 @@ export const NameInput = styled(Field)`
   background-color: transparent;
   transition: border var(--transition-time) var(--transition-function);
 
-  &:hover,
   &:focus {
-    /* border: 1px solid var(--accent);
-    stroke: green;
-    fill: green; */
     border: 1px solid var(--modal-input-stroke-hover);
   }
 
@@ -197,6 +192,7 @@ export const UserIconStyled = styled.svg`
   left: 16.5px;
   transform: translateY(-50%);
   stroke: var(--text-primary);
+  pointer-events: none;
 
   @media screen and (min-width: 768px) {
     width: 24px;
@@ -204,28 +200,16 @@ export const UserIconStyled = styled.svg`
   }
 `;
 
-export const EditBtn = styled.button`
+export const EditIcon = styled.svg`
   position: absolute;
   top: 50%;
   right: 14px;
   transform: translateY(-50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  padding: 0;
-  border: none;
-
-  @media screen and (min-width: 768px) {
-    right: 18px;
-  }
-`;
-
-export const EditIcon = styled.svg`
   stroke: var(--cancel-menu-icon);
   width: 17px;
   height: 17px;
   fill: transparent;
+  transition: stroke var(--transition-time) var(--transition-function);
 
   @media screen and (min-width: 768px) {
     width: 19px;
@@ -233,6 +217,7 @@ export const EditIcon = styled.svg`
   }
 
   &:hover {
+    cursor: pointer;
     stroke: var(--accent-green);
   }
 `;

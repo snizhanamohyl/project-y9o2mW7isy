@@ -9,7 +9,7 @@ import { ModalContent } from './ModalContent.styled';
 import {CloseIcon, CloseButton} from './EditUserForm.styled.js'
 import {
   FormStyled, UserAvatarWrapper, AvatarLabel, PlusIcon, UserImgWrapper,
-  InputButtonWrapper, NameLabel, NameInput, UserIconStyled, EditBtn,
+  InputButtonWrapper, NameLabel, NameInput, UserIconStyled,
   EditIcon, SubmitBtn, ErrorMessage, UserIcon, Avatar} from './EditUserForm.styled.js';
 
 export default function EditUserForm({ handleCloseModal }) {
@@ -113,20 +113,12 @@ export default function EditUserForm({ handleCloseModal }) {
                       props.setFieldValue('name', event.target.value);
                     }}
                   />
-
                   <UserIconStyled width="18" height="18">
                     <use href={`${sprite}#icon-user`}></use>
                   </UserIconStyled>
-
-                    <EditBtn
-                      type="button"
-                      onClick={() => props.setFieldValue('name', '')}
-                    >
-                      <EditIcon width="17" height="17">
-                        <use href={`${sprite}#icon-edit`}></use>
-                      </EditIcon>
-                    </EditBtn>
-                
+                  <EditIcon width="17" height="17">
+                    <use href={`${sprite}#icon-edit`}></use>
+                  </EditIcon>
                 </NameLabel>
 
                 {props.errors.name ? (
