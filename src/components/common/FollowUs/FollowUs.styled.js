@@ -21,7 +21,7 @@ export const Socials = styled.ul`
   }
 
   & a:hover,
-  & a:focus {
+  & a:focus-visible {
     outline: none;
     color: ${({ $isFooter }) =>
       $isFooter ? 'var(--bg-color)' : 'var(--dark-accent)'};
